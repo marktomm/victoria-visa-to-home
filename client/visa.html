@@ -10,9 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <style>
-    html, body {
-        height: 100%;
-    }
+
     footer {
         color: #666;
         background: #222;
@@ -25,16 +23,7 @@
     footer a:hover {
         color: #efefef;
     }
-    .wrapper {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        margin: 0 auto -63px;
-    }
-    .push {
-        height: 63px;
-    }
-    /* not required for sticky footer; just pushes hero down a bit */
+   ired for sticky footer; just pushes hero down a bit */
     .wrapper > .container {
         padding-top: 60px;
     }
@@ -42,38 +31,26 @@
       width: 100%; 
     }
     img#logo-img{
-      width: 150px;
+      width: 25px;
     }
-</style>
+    .col-centered{
+        float: none;
+        margin: 0 auto;
+    }
+  </style>
   
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="container">
+    <div class="container ">
       {{> header}}
+    
     </div>
-    <div class="push"><!--//--></div>
+      <div class="push col-md-4 col-centered">
+        {{> quickForm id="fields1" schema=Schemas.FieldsExamples}}
+        {{> about_us}}
+    </div>
   </div>
-  {{> footer}}
+    {{> footer}}
 </body>
-
-<template name="header">
-  <header>
-    <img src="/img/sample_logo.png" id="logo-img" class="col-md-2">
-    <ul class="nav nav-tabs col-md-10">
-      <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>  Home</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
-      <li class="pull-right"><a href="#"><span class="glyphicon glyphicon-asterisk"></span> Login</a></li>
-    </ul>
-  </header>
-</template>
-
-<template name="footer">
-  <footer>
-    <div class="container">
-      <p>Mark Tomm. Tallinn 2015 <span class="glyphicon glyphicon-copyright-mark"></span></p>
-    </div>
-  </footer>
-</template>
