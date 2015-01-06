@@ -11,3 +11,4 @@ anti:i18n
 accounts-ui
 accounts-password
 useraccounts:bootstrap
+iron:router
