@@ -5,10 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 mizzao:bootstrap-3
 aldeed:autoform
 anti:i18n
 accounts-ui
 accounts-password
+useraccounts:bootstrap
