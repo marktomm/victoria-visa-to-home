@@ -1,14 +1,20 @@
 Tasks = new Mongo.Collection("UserForm");
-
-
+collCountries = new Mongo.Collection("countries");
 
 if (Meteor.isClient) {
   Session.set("currentLang" , i18n.getLanguage());
   
   Template.header.helpers({
-    dev_header: "none",
+    dev_header: function(rt){
+      return Router.current().route.getName();
+    },
+    
     isCurrentLang: function(lang){
       return Session.equals('currentLang', lang);
+    },
+    
+    isCurrentRoute: function(rt){
+      return Router.current().route.getName() == rt;
     }
   });
   
@@ -23,14 +29,23 @@ if (Meteor.isClient) {
     }
   });
   
-  Template.body.events({
+  
+  Template.bodyTemplate.events({
     "submit #fields1": function(event){
       return false;
     }
   });
   
+  
   Accounts.ui.config({
     passwordSignupFields: "USERNAME_ONLY"
+  });
+  
+
+  Template.countryList.helpers({
+    countries: function(){
+      return collCountries.find({});
+    }
   });
 }
 
