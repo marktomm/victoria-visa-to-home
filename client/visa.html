@@ -41,16 +41,15 @@
   
 </head>
 
-<body>
+<template name="bodyTemplate">
   <div class="wrapper">
     <div class="container ">
       {{> header}}
     
     </div>
       <div class="push col-md-4 col-centered">
-        {{> quickForm id="fields1" schema=Schemas.FieldsExamples}}
-        {{> about_us}}
+        {{> yield}}
     </div>
   </div>
     {{> footer}}
-</body>
+</template>

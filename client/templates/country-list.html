@@ -1,0 +1,13 @@
+<template name="countryList">
+    Countries
+    {{#each countries}}
+      {{> country}}
+    {{/each}}
+</template>
+
+
+<template name="country">
+  <div class="col-md-3">
+    <img src="img/country-flag-icons/{{country.img}}"><br>
+  </div>
+</template>
