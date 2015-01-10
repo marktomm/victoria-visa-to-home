@@ -1,5 +1,5 @@
 <template name="countryList">
-    Countries
+  <h2>{{i18n "country_list_our_services"}}</h2>
     {{#each countries}}
       {{> country}}
     {{/each}}
@@ -7,7 +7,33 @@
 
 
 <template name="country">
-  <div class="col-md-3">
-    <img src="img/country-flag-icons/{{country.img}}"><br>
+  <style>
+    div.country-thumbnail{
+      height: 300px;
+      margin: 20px;
+    }
+    div.country-thumbnail img{
+      height: 35px;
+      width: 35px;
+    }
+    div.country-thumbnail li.no{
+      display: none;
+    }
+    div.country-thumbnail ul.country-info{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  
+  <div class="col-md-3 text-center well country-thumbnail">
+    <ul class="country-info">
+      <li><img src="{{img}}"><br></li>
+      <li><h3>{{name}}</h3></li>
+      <li class="{{consult}}">{{i18n "countrythumb.consult"}}</li>
+      <li class="{{doc_check}}">{{i18n "countrythumb.doch"}}</li>
+      <li class="{{fill_invoice}}">{{i18n "countrythumb.inv"}}</li>
+      <li class="{{insurance}}">{{i18n "countrythumb.insurance"}}</li>
+    </ul>
   </div>
 </template>

@@ -37,19 +37,23 @@
         float: none;
         margin: 0 auto;
     }
+    
   </style>
   
 </head>
 
 <template name="bodyTemplate">
-  <div class="wrapper">
-    <div class="container ">
-      {{> header}}
-    
-    </div>
-      <div class="push col-md-4 col-centered">
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        {{dev_dbg}}
+        {{> header}}
+        <div id="form-div-id" style="display: none;">
+            <!--A very horrible hack to translate forms-->
+        </div>
         {{> yield}}
+      </div>
     </div>
-  </div>
-    {{> footer}}
+      {{> footer}}
+  </body>
 </template>
