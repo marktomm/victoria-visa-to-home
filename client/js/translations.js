@@ -32,6 +32,7 @@ i18n.map('en', {
 });
 
 i18n.map('ee', {
+  //Refactor
   nav_home: 'Pealeht',
   nav_about_us: 'Firmast',
   nav_contact: 'Kontakt',
@@ -60,4 +61,102 @@ i18n.map('ee', {
     inv: 'Abi lisa dokumentidega',
     insurance: 'Kindlustus'
   }
+});
+
+
+// Custom sign in form translations
+T9n.map('ee',{
+  add: "Lisa",
+  and: "ja",
+  back: "Tagasi",
+  changePassword: "Muuda parool",
+  choosePassword: "Vali parool",
+  clickAgree: "Klikkides 'Registreeri' noustute",
+  configure: "Konfi",
+  createAccount: "Loo kasutaja konto",
+  currentPassword: "Parool",
+  dontHaveAnAccount: "Kas Teil on kasutaja?",
+  email: "E-post",
+  emailAddress: "E-posti aadress",
+  emailResetLink: "E-posti reset link",
+  forgotPassword: "Unustasid parooli?",
+  ifYouAlreadyHaveAnAccount: "Juhul kui teil on juba kasutaja konto",
+  newPassword: "Uus parool",
+  newPasswordAgain: "Uus parool (uuesti)",
+  optional: "Valikuline",
+  OR: "Või",
+  password: "Parool",
+  passwordAgain: "Parool (uuesti)",
+  privacyPolicy: "Privacy Policy",
+  remove: "eemalda",
+  resetYourPassword: "Muuda parooli",
+  setPassword: "Säti parool",
+  sign: "Logi",
+  signIn: "Logi Sisse",
+  signin: "logi sisse",
+  signOut: "Logi Välja",
+  signUp: "Registreeri",
+  signupCode: "Registreerimise kood",
+  signUpWithYourEmailAddress: "Registreeri e-postiga",
+  terms: "Kasutamisõigused",
+  updateYourPassword: "Uuenda parool",
+  username: "Kasutajanimi",
+  usernameOrEmail: "Kasutajanimi või e-post",
+  "with": "koos",
+  info: {
+    emailSent: "E-kiri saadetud",
+    emailVerified: "E-post verifitseeritud",
+    passwordChanged: "Parool muudetud",
+    passwordReset: "Parool reset"
+  },
+  error: {
+    emailRequired: "E-posti aadress on vajalik.",
+    minChar: "Parool peab olema vähemalt 7 tähemärki.",
+    pwdsDontMatch: "Paroolid ei klapi",
+    pwOneDigit: "Parool peab sisaldama vähemalt ühte numbrit.",
+    pwOneLetter: "Parool peab sisaldama vähemalt ühte tähemärki.",
+    signInRequired: "Te peate olema sisse logitud.",
+    signupCodeIncorrect: "Registration code is incorrect.",
+    signupCodeRequired: "Registration code is required.",
+    usernameIsEmail: "Username cannot be an email address.",
+    usernameRequired: "Username is required.",
+    accounts: {
+      "Email already exists.": "Email already exists.",
+      "Email doesn't match the criteria.": "Email doesn't match the criteria.",
+      "Invalid login token": "Invalid login token",
+      "Login forbidden": "Login forbidden",
+      "Service unknown": "Service unknown",
+      "Unrecognized options for login request": "Unrecognized options for login request",
+      "User validation failed": "User validation failed",
+      "Username already exists.": "Username already exists.",
+      "You are not logged in.": "You are not logged in.",
+      "You've been logged out by the server. Please log in again.": "You've been logged out by the server. Please log in again.",
+      "Your session has expired. Please log in again.": "Your session has expired. Please log in again.",
+      "No matching login attempt found": "No matching login attempt found",
+      "Password is old. Please reset your password.": "Password is old. Please reset your password.",
+      "Incorrect password": "Incorrect password",
+      "Invalid email": "Invalid email",
+      "Must be logged in": "Must be logged in",
+      "Need to set a username or email": "Need to set a username or email",
+      "old password format": "old password format",
+      "Password may not be empty": "Password may not be empty",
+      "Signups forbidden": "Signups forbidden",
+      "Token expired": "Token expired",
+      "Token has invalid email address": "Token has invalid email address",
+      "User has no password set": "User has no password set",
+      "User not found": "User not found",
+      "Verify email link expired": "Verify email link expired",
+      "Verify email link is for unknown address": "Verify email link is for unknown address",
+      "Match failed": "Match failed",
+      "Unknown error": "Unknown error"
+    }
+  }
+});
+
+i18n.map('en', {
+  fullName: 'Full Name'
+});
+
+i18n.map('ee', {
+  fullName: 'Tais nimi'
 });

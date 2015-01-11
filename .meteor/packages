@@ -13,3 +13,5 @@ accounts-password
 iron:router
 tap:i18n-db
 frozeman:animation-helper
+useraccounts:bootstrap
+service-configuration
