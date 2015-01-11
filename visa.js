@@ -4,8 +4,6 @@ form_view = (function () { return; })();
 
 if (Meteor.isClient) {
   
-  Session.set("dev_dbg" , "none");
-  
   Meteor.startup(function () {
     TAPi18n.subscribe("countries");
     i18n.setLanguage('ee');
@@ -51,12 +49,6 @@ if (Meteor.isClient) {
     }
   });
   
-  
- Template.bodyTemplate.helpers({
-    dev_dbg : function(event){
-      return Session.get("dev_dbg");;
-    }
-  });
   
   Template.bodyTemplate.events({
     "submit #fields1": function(event){
