@@ -29,6 +29,7 @@ if (Meteor.isClient) {
     }
   });
   
+  
   Template.header.events({
     "click #lang-ee": function(){
       i18n.setLanguage('ee');
@@ -46,7 +47,11 @@ if (Meteor.isClient) {
       Session.set("currentLang" , i18n.getLanguage());
 
       Meteor.call('reRenderForm');
-    }
+    },
+    'click #signOut': function(event){
+      event.preventDefault();
+      Meteor.logout();
+  },
   });
   
   
