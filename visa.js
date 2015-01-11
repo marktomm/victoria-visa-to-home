@@ -6,8 +6,7 @@ if (Meteor.isClient) {
   
   Meteor.startup(function () {
     TAPi18n.subscribe("countries");
-    i18n.setLanguage('ee');
-    T9n.setLanguage('ee');
+    T9n.setLanguage(i18n.getLanguage());
     Session.set("currentLang" , i18n.getLanguage());  
       
     TAPi18n.setLanguage(i18n.getLanguage());
@@ -32,26 +31,17 @@ if (Meteor.isClient) {
   
   Template.header.events({
     "click #lang-ee": function(){
-      i18n.setLanguage('ee');
-      T9n.setLanguage(i18n.getLanguage());
-      TAPi18n.setLanguage(i18n.getLanguage());
-      
-      Session.set("currentLang" , i18n.getLanguage());
-      
+      Meteor.call('changeLang',  'ee');
       Meteor.call('reRenderForm');
     },
     "click #lang-en": function(){
-      i18n.setLanguage('en');
-      T9n.setLanguage(i18n.getLanguage());
-      TAPi18n.setLanguage(i18n.getLanguage());
-      Session.set("currentLang" , i18n.getLanguage());
-
+      Meteor.call('changeLang',  'en');
       Meteor.call('reRenderForm');
     },
     'click #signOut': function(event){
       event.preventDefault();
       Meteor.logout();
-  },
+    },
   });
   
   
@@ -109,5 +99,11 @@ Meteor.methods({
       }
       form_view = Blaze.render(Template.form, document.getElementById("form-div-id") );
     }
+  },
+  'changeLang': function(lang_string){
+    i18n.setLanguage(lang_string);
+    T9n.setLanguage(i18n.getLanguage());
+    TAPi18n.setLanguage(i18n.getLanguage());
+    Session.set("currentLang" , i18n.getLanguage());
   }
 });
