@@ -39,11 +39,10 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="{{#if isCurrentRoute '/'}}active{{/if}}"><a href="/"><span class="glyphicon glyphicon-home"></span> {{i18n "nav_home"}}</a></li>
-                <li><a href="/aboutUs"><span class="glyphicon glyphicon-user"></span> {{i18n "nav_about_us"}}</a></li>
-                <li><a href="/login"><span class="glyphicon glyphicon-envelope"></span> {{i18n "nav_contact"}}</a></li>
+                <li class="{{#if isCurrentRoute '/'}}active{{/if}}"><a href="/"><span class="glyphicon glyphicon-home"></span> {{i18n "nav.home"}}</a></li>
+                <li><a href="/aboutUs"><span class="glyphicon glyphicon-user"></span> {{i18n "nav.about_us"}}</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-envelope"></span> {{i18n "nav.signin"}}</a></li>
                 {{#if currentUser}}<li><a href="/form"><span class="glyphicon glyphicon-th"></span> Form</a></li>{{/if}}
-                <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>{{> loginButtons}}</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                   <li><a href="#" class="{{#if isCurrentLang 'ee'}}active{{/if}}" id="lang-ee">Est</a></li>

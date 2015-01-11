@@ -1,9 +1,12 @@
 i18n.setDefaultLanguage('ee');
 
 i18n.map('en', {
-  nav_home: 'Home',
-  nav_about_us: 'About Us',
-  nav_contact: 'Contact',
+  nav:{
+    home: 'Home',
+    about_us: 'About Us',
+    contact: 'Contact',
+    signin: 'Sign In'
+  },
   
   about_us_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut lectus massa. Suspendisse pulvinar ante eros, quis feugiat enim varius eget. Integer varius est vel ex molestie, et lacinia nulla mattis. Nulla eget leo vitae erat tristique viverra. Nunc blandit purus eu tortor gravida elementum. In dictum luctus mauris at commodo. Suspendisse potenti. Donec diam quam, sollicitudin vitae rutrum eu, suscipit in arcu. Phasellus sit amet feugiat orci. Aenean ultricies turpis vitae lacus pellentesque, eget accumsan ipsum mollis. Maecenas rutrum mattis ligula, non accumsan leo placerat sed. Nam nec metus nisi. Nulla non arcu a felis mollis fringilla ac eget sem. Proin varius odio tortor, quis faucibus nulla lobortis et. Donec arcu nunc, ullamcorper vitae tempus quis, iaculis et nibh. Etiam vel sapien semper, hendrerit nisi id, accumsan risus. Sed odio purus, sagittis ac purus eleifend, dictum blandit ipsum. Cras volutpat eu lorem sit amet rhoncus.',
   about_us_head: 'About Us',
@@ -33,9 +36,13 @@ i18n.map('en', {
 
 i18n.map('ee', {
   //Refactor
-  nav_home: 'Pealeht',
-  nav_about_us: 'Firmast',
-  nav_contact: 'Kontakt',
+  nav:{
+    home: 'Pealeht',
+    about_us: 'Firmast',
+    contact: 'Kontakt',
+    signin: 'Logi Sisse'
+  },
+
   
   about_us_text: 'DS Systems OÜ on uue meedia ja infotehnoloogia vallas tegutsev ettevõtte Eestis, mille meeskonna tegevuse algus ulatub aastasse 1993, kui alustati iseseisvalt laevade liiniagenteerimise- ja transpordilogistikaalase infosüsteemi loomist ühes Eesti suuremas meretranspordiga tegelevas ettevõttes. Sellise spetsiifilise ja laia valdkonna nagu seda on logistika- ja (mere)transpordialase tarkvara arendamisega, ollakse järgnevalt juhtival kohal Baltiriikide seas. Samal aastal tehti algust ka riist- ja tarkvara hooldusega, erinevate IKT võrkude projekteerimise, väljaehitamise, nende seadistamisega ning järgnevate tugiteenuste osutamisega (hiljem ka laevadel).1995.aastast alustati Interneti kodulehekülgede valmistamisega ja sellega seonduvate lisateenuste osutamisega.2000-nda aasta algusest lisandus teenusena ka digitaalfotode ja QTVR panoraamide (360°) tegemine. Kõrgkvaliteediliste sfääriliste panoraamide, virtuaaltuuride ja mahukate tsilindriliste vaadete valmistamisel ollakse momendil turuliidrid nii Eestis kui lähipiirkonnas.',
   about_us_head: 'Meie Firmast',
