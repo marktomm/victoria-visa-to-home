@@ -1,8 +1,10 @@
 <template name="countryList">
   <h2>{{i18n "country_list_our_services"}}</h2>
+  {{#Animate}}
     {{#each countries}}
       {{> country}}
     {{/each}}
+  {{/Animate}}
 </template>
 
 
@@ -11,6 +13,12 @@
     div.country-thumbnail{
       height: 300px;
       margin: 20px;
+      
+      opacity: 1; 
+      transition: opacity 500ms;
+    }
+    div.country-thumbnail.animate{
+      opacity: 0; 
     }
     div.country-thumbnail img{
       height: 35px;
@@ -26,7 +34,7 @@
     }
   </style>
   
-  <div class="col-md-3 text-center well country-thumbnail">
+  <div class="col-md-3 text-center well country-thumbnail animate">
     <ul class="country-info">
       <li><img src="{{img}}"><br></li>
       <li><h3>{{name}}</h3></li>

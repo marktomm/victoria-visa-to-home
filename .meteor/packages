@@ -12,3 +12,4 @@ accounts-ui
 accounts-password
 iron:router
 tap:i18n-db
+frozeman:animation-helper
